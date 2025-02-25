@@ -8,10 +8,6 @@ const Todo = ({ id, task, removeTodo, editTodo }) => {
     removeTodo(id);
   };
 
-  const handleEdit = () => {
-    setIsEditing(true);
-  };
-
   const handleSave = () => {
     editTodo(id, newTask);
     setIsEditing(false);
